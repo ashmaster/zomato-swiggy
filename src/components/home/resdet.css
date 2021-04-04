@@ -1,0 +1,67 @@
+.resDet-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    height: 100%;
+    
+}
+
+.resDets{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    height: 70%;
+
+}
+
+.foodCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 2px 2px 4px 1px rgb(170 171 184);
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    font-family: 'Jura';
+    font-weight: 'bold';
+}
+
+.foodDets{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    background-color: rgb(139,231,139,0.5);
+    margin-top: 20px;
+    width: 95%;
+    padding-bottom: 5px;
+    padding-bottom: 5px;
+    justify-content: center;
+    text-align: left;
+}
+
+.gotoButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 90%;
+    color: #fff;
+    margin-top: 40px;
+    position: fixed;
+    bottom: 0;
+}

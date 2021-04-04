@@ -1,0 +1,86 @@
+.list {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin : 20px;
+    width: 100%;
+}
+
+.resCard {
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 4px 1px rgb(170 171 184) ;
+    margin : 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    
+}
+
+.resCard:hover{
+    transform: scale(1.05,1.05);
+    transition: all 1 ease;
+}
+
+.resImg {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 9px 1px rgb(0 0 0 / 50%);
+    align-self: center;
+    margin-top: 20px;
+}
+
+.resDet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin:20px
+}
+
+.resName{
+
+}
+
+.resRating {
+    transform: rotate(-90deg);
+}
+
+.dot{
+    display: flex;
+    align-self: center;
+    flex-shrink: 0;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    width: 0.4rem;
+    height: 0.4rem;
+    background: rgb(181, 181, 181);
+    border-radius: 50%;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+}
+
+.searchRes{
+    width: 50%;
+    height: 30px;
+    box-shadow: 0px 0px 10px 1px #ccc;
+    border-radius: 10px;
+    border-width: 0;
+    padding-left: 10px;
+    margin:20px;
+    outline: none;
+}

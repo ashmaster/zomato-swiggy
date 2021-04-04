@@ -1,0 +1,18 @@
+.home-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    background-color: #FFFAFC;
+}
+
+
+.sideBar {
+    height: 100vh;
+    background-color: #fff;
+    right:0;
+    position: fixed;
+    transition: width 0.5s ease ;
+    border-left: solid #000 1px;
+    overflow-y: scroll;
+}

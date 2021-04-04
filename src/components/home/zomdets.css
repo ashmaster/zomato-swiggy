@@ -1,0 +1,22 @@
+.itemCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 2px 2px 4px 1px rgb(170 171 184);
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    font-family: 'Jura';
+    font-weight: 'bold';
+}
+
+.itemDets {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
