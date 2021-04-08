@@ -10,7 +10,8 @@
     display: flex;
     flex-direction: column;
     margin-top: 40px;
-    height: 70%;
+    height: 100%;
+    padding-bottom: 100px;
 
 }
 
@@ -59,7 +60,7 @@
     font-weight: bold;
     padding-top: 2px;
     padding-bottom: 2px;
-    width: 90%;
+    width: 36%;
     color: #fff;
     margin-top: 40px;
     position: fixed;

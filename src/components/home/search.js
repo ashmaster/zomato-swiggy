@@ -29,7 +29,7 @@ export default function Search() {
   }, [redProps])
  /* const getCity = async (lat, long, fromZom) => {
     const res = await axios.get(
-      `http://localhost:5000/getLocInfo?lat=${lat}&long=${long}&pid=0`
+      `http://localhost:5001/getLocInfo?lat=${lat}&long=${long}&pid=0`
     );
     console.log(res.data.data);
     if (fromZom) setLocation(res.data.data.locationDetails.cityName);
@@ -91,7 +91,7 @@ export default function Search() {
 
   const citySuggestion = async () => {
     const res = await axios.get(
-      `http://localhost:5000/citySuggest/${locInput}`
+      `http://localhost:5001/citySuggest/${locInput}`
     );
 
     setCityList(res.data.data.locationSuggestions);
@@ -142,7 +142,7 @@ export default function Search() {
   const getLocInfo = async (lat, lon, pid) => {
 
     await axios
-      .get(`http://localhost:5000/getLocInfo?lat=${lat}&long=${lon}&pid=${pid}`)
+      .get(`http://localhost:5001/getLocInfo?lat=${lat}&long=${lon}&pid=${pid}`)
       .then((res) => {
         var params = {
           cityId: res.data.data.locationDetails.cityId,
@@ -176,7 +176,7 @@ export default function Search() {
   useEffect(async () => {
     //console.log(searchParams.entityId, searchParams.cityId, searchParams.lat, searchParams.long, searchParams.cityName)
     if(food.length>3){
-    const res = await axios.get(`http://localhost:5000/getFoodSuggestion?entityId=${searchParams.entityId}&cityId=${searchParams.cityId}&lat=${searchParams.lat}&long=${searchParams.long}&deliveryId=${searchParams.deliveryId}&food=${food}&cityName=${searchParams.cityName}`)
+    const res = await axios.get(`http://localhost:5001/getFoodSuggestion?entityId=${searchParams.entityId}&cityId=${searchParams.cityId}&lat=${searchParams.lat}&long=${searchParams.long}&deliveryId=${searchParams.deliveryId}&food=${food}&cityName=${searchParams.cityName}`)
     setfoodList(res.data.data.results)
     }
     else{
@@ -206,7 +206,7 @@ export default function Search() {
     searchBar.current.style.top = "10%";
     foodSearch.current.style.display = "none";
     locSearch.current.style.display = "none";
-    const res = await axios.get(`http://localhost:5000/getFood/v2?cityid=${redProps.cityId}&foodid=${item.entityId}&lat=${redProps.loc.lat}&long=${redProps.loc.long}&food=${item.name}`)
+    const res = await axios.get(`http://localhost:5001/getFood/v2?cityname=${redProps.cityName}&foodid=${item.entityId}&lat=${redProps.loc.lat}&long=${redProps.loc.long}&food=${item.name}`)
     res.data.data.sort((a,b) => (a.time > b.time) ? 1 : ((b.time > a.time) ? -1 : 0))
     dispatch({
       type: "UPDATE_LIST",
